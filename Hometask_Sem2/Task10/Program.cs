@@ -3,11 +3,19 @@ Console.WriteLine("Введите  трехначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number < 100 || number > 999)
 {
-    Console.WriteLine("Введено не трехзначное число ");
+   Console.WriteLine("Введено неверное число "); 
 }
-else 
+else
 {
-int result = number % 100;
-int SecondNumber = result / 10;
-Console.WriteLine(SecondNumber);
+    int secondDigit = SecondDigit(number);
+    Console.WriteLine(secondDigit);  
 }
+
+int SecondDigit (int num)
+    {
+    int result = num % 100;
+    result = result / 10;
+    return result;
+    }  
+
+
