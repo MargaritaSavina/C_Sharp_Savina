@@ -22,7 +22,7 @@ double[] Equation(double[] arr)
     // arr[0] = k1;       arr[1] = b1;
     // arr[2] = k2;       arr[3] = b2;
     double x = (arr[1] - arr[3]) / (arr[2] - arr[0]); 
-    double y = arr[0] * x + arr[3]; 
+    double y = arr[0] * x + arr[1]; 
     arrXY[0] = x;
     arrXY[1] = y;       
     return arrXY;       
